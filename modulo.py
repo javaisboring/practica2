@@ -46,7 +46,6 @@ def estadistica_por_columna(matriz:list, columna:int=None)->list:
                 maxima = matriz[i][columna]
             elif minima > matriz[i][columna]:
                 minima = matriz[i][columna]
-
             if matriz[i][columna] > maxima:
                 maxima = matriz[i][columna]
         suma+=matriz[i][columna]
