@@ -29,18 +29,13 @@ def estadistica_por_columna(matriz:list, columna:int=None)->list:
                     maxima = matriz[i][j]
                 elif minima > matriz[i][j]:
                     minima = matriz[i][j]
-
                 if matriz[i][j] > maxima:
                     maxima = matriz[i][j]
-                
                 suma+=matriz[i][j]
-
             retorno+=("{} --> Mínima: {} Máxima: {} Promedio: {}\n".format(posicion, minima, maxima, round(suma/len(matriz), 2) ))
             posicion+=1
-
         return retorno
     else:
-
         retorno=""
         minima=None
         maxima=None
@@ -54,9 +49,7 @@ def estadistica_por_columna(matriz:list, columna:int=None)->list:
 
             if matriz[i][columna] > maxima:
                 maxima = matriz[i][columna]
-            
         suma+=matriz[i][columna]
-
         return ("Mínima: {} \nMáxima: {} \nPromedio: {}\n".format(minima, maxima, round(suma/len(matriz), 2) ))
 
 if __name__ =='__main__':
